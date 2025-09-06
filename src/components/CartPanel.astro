@@ -1,0 +1,264 @@
+---
+// Cart panel component
+---
+
+<div id="cart-panel" class="fixed top-0 right-0 w-1/2 h-full bg-white shadow-[-2px_0_10px_rgba(0,0,0,0.1)] transform translate-x-full transition-transform duration-700 ease-out z-[200] hidden md:w-[500px] sm:w-[85%] sm:mx-auto">
+  
+  <!-- Cart Header -->
+  <div class="flex items-center justify-between pt-8 px-6 border-b border-[#f0f0f0]">
+    <div class="flex items-center gap-3">
+      <h2 class="text-2xl font-bold text-black">Your Cart 2</h2>
+    </div>
+    <button id="close-cart" class="text-gray-500 hover:text-gray-700 transition-colors">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Cart Items -->
+  <div class="flex-1 overflow-y-auto">
+    <!-- Item 1 - Horizon Glow Sneakers -->
+    <div class="p-6 border-b border-[#f0f0f0]">
+      <div class="flex items-start gap-4 relative">
+        <!-- Product Image -->
+        <div class="w-20 h-20 bg-gray-200 rounded-lg flex-shrink-0">
+          <div class="w-full h-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="flex-1 min-w-0">
+          <h3 class="text-base font-bold text-black mb-1">Horizon Glow Sneakers</h3>
+          <p class="text-sm text-gray-600 mb-2">6</p>
+          <div class="flex items-center gap-2">
+            <span class="text-base font-bold text-black">$1,299.90</span>
+            <span class="text-sm text-gray-500 line-through">$1,099.90</span>
+          </div>
+        </div>
+
+        <!-- Quantity Controls -->
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 bg-gray-100 hover:bg-gray-200 text-black rounded-lg flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+            </svg>
+          </button>
+          <span class="text-base font-bold text-black min-w-[20px] text-center">10</span>
+          <button class="w-8 h-8 bg-gray-100 hover:bg-gray-200 text-black rounded-lg flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Remove Button -->
+        <button class="text-gray-400 hover:text-red-500 transition-colors ml-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Item 2 - Retro Handheld Console -->
+    <div class="p-6 border-b border-[#f0f0f0]">
+      <div class="flex items-start gap-4 relative">
+        <!-- Product Image -->
+        <div class="w-20 h-20 bg-yellow-200 rounded-lg flex-shrink-0">
+          <div class="w-full h-full flex items-center justify-center">
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="flex-1 min-w-0">
+          <h3 class="text-base font-bold text-black mb-1">Retro Handheld Console</h3>
+          <p class="text-sm text-gray-600 mb-2">Yellow</p>
+          <div class="flex items-center gap-2">
+            <span class="text-base font-bold text-black">$119.98</span>
+            <span class="text-sm text-gray-500 line-through">$99.98</span>
+          </div>
+        </div>
+
+        <!-- Quantity Controls -->
+        <div class="flex items-center gap-2">
+          <button class="w-8 h-8 bg-gray-100 hover:bg-gray-200 text-black rounded-lg flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+            </svg>
+          </button>
+          <span class="text-base font-bold text-black min-w-[20px] text-center">2</span>
+          <button class="w-8 h-8 bg-gray-100 hover:bg-gray-200 text-black rounded-lg flex items-center justify-center transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Remove Button -->
+        <button class="text-gray-400 hover:text-red-500 transition-colors ml-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Summary -->
+  <div class="p-6 border-t border-[#f0f0f0]">
+    <!-- Subtotal -->
+    <div class="flex justify-between items-center mb-5">
+      <span class="text-base text-black">Subtotal</span>
+      <span class="text-base font-bold text-black">$1,419.88</span>
+    </div>
+
+    <!-- Checkout Button -->
+    <button class="w-full bg-black text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition-opacity mb-5">
+      Checkout
+    </button>
+
+    <!-- Footer Badge -->
+    
+  </div>
+</div>
+
+<script>
+  // Cart functionality
+  let cartOpen = false;
+
+  // Function to open cart
+  function openCart() {
+    const panel = document.getElementById('cart-panel');
+    const mainContent = document.querySelector('main');
+    
+    // Show cart panel
+    if (panel) {
+      panel.classList.remove('hidden');
+    }
+    
+    // Apply brightness filter to background content
+    if (mainContent) {
+      mainContent.style.filter = 'brightness(0.3)';
+      mainContent.style.transition = 'filter 0.5s ease-out';
+    }
+    
+    // Small delay to ensure elements are visible before animation
+    setTimeout(() => {
+      // Slide in cart panel smoothly from right corner
+      if (panel) {
+        panel.classList.remove('translate-x-full');
+        panel.classList.add('translate-x-0');
+      }
+    }, 50);
+    
+    cartOpen = true;
+    // Don't prevent scrolling - allow background interaction
+  }
+
+  // Function to close cart
+  function closeCart() {
+    const panel = document.getElementById('cart-panel');
+    const mainContent = document.querySelector('main');
+    
+    // Remove brightness filter from background content
+    if (mainContent) {
+      mainContent.style.filter = 'brightness(1)';
+    }
+    
+    // Slide out cart panel smoothly back to right corner
+    if (panel) {
+      panel.classList.remove('translate-x-0');
+      panel.classList.add('translate-x-full');
+    }
+    
+    // Hide panel after animation completes
+    setTimeout(() => {
+      if (panel) {
+        panel.classList.add('hidden');
+      }
+    }, 700);
+    
+    cartOpen = false;
+  }
+
+  // Event listeners
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add to cart button listeners
+    const addToCartButtons = document.querySelectorAll('[data-add-to-cart]');
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+        openCart();
+      });
+    });
+
+    // Close cart button
+    const closeCartButton = document.getElementById('close-cart');
+    if (closeCartButton) {
+      closeCartButton.addEventListener('click', closeCart);
+    }
+
+
+
+    // Escape key to close
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && cartOpen) {
+        closeCart();
+      }
+    });
+      });
+  </script>
+
+<style>
+  /* Enhanced smooth cart animations */
+  #cart-panel {
+    transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  /* Smooth entrance effect */
+  #cart-panel.translate-x-0 {
+    transform: translateX(0);
+  }
+  
+  #cart-panel.translate-x-full {
+    transform: translateX(100%);
+  }
+  
+  /* Enhanced shadow during animation */
+  #cart-panel {
+    box-shadow: -2px 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Subtle scale effect on entrance */
+  #cart-panel.translate-x-0 {
+    animation: cartEntrance 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+  
+  @keyframes cartEntrance {
+    0% {
+      transform: translateX(100%) scale(0.98);
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Background brightness transition */
+  main {
+    transition: filter 0.5s ease-out;
+  }
+  
+  /* Ensure background remains interactive */
+  main[style*="brightness"] {
+    pointer-events: auto;
+  }
+</style>

@@ -1,0 +1,433 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Store - Tech Wave" description="Premium products designed to elevate your everyday experience. Shop the latest technology and accessories.">
+	<Header />
+	
+	<main class="pt-[100px] min-h-screen bg-white">
+		<!-- Page Container -->
+		<div class="max-w-[1200px] mx-auto px-[40px]">
+			<!-- Page Header -->
+			<div class="mb-[40px]">
+				<h1 class="text-[48px] font-bold text-black leading-tight">
+					Store
+				</h1>
+			</div>
+
+			<!-- Category Filter -->
+			<div class="mb-[40px]">
+				<div class="flex gap-[16px]">
+					<button class="filter-btn filter-btn-active px-[12px] py-[8px] rounded-full text-sm font-medium transition-all duration-200">
+						All
+					</button>
+					<button class="filter-btn px-[12px] py-[8px] rounded-full text-sm font-medium transition-all duration-200">
+						Gear
+					</button>
+					<button class="filter-btn px-[12px] py-[8px] rounded-full text-sm font-medium transition-all duration-200">
+						Technology
+					</button>
+					<button class="filter-btn px-[12px] py-[8px] rounded-full text-sm font-medium transition-all duration-200">
+						Accessory
+					</button>
+				</div>
+			</div>
+
+			<!-- Product Grid -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[32px] gap-y-[48px]">
+				<!-- Product Card 1: Minimal Watch -->
+				<a href="/store/skagen-watch" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								GEAR
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-white flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-black rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									Minimal Watch
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed">
+									Elevate your style with the sophisticated Lryx Watch, a perfect blend of elegance and functionality. 
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$349.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 2: Watch Screen Protector -->
+				<a href="/store/watch-screen-protector" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								GEAR
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-green-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									Watch Screen Protector
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Stay connected and monitor your fitness effortlessly with the Watch SE 3, your essential companion for an active lifestyle.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$349.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 3: Headphone 21-Bass -->
+				<a href="/store/hash-headphones" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								GEAR
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-gray-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									Headphone 21-Bass
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Experience deep, powerful bass and crystal-clear audio with the Headphone 21 Bass, perfect for music enthusiasts.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$499.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 4: Buds 2 Wireless -->
+				<a href="/store/buds-2-wireless" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								GEAR
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-purple-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									Buds 2 Wireless
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Immerse yourself in premium sound quality and enjoy the ultimate listening experience with our top-notch earbuds.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$389.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 5: eDisplay XE TV -->
+				<a href="/store/edisplay-xe" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								GEAR
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-indigo-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									eDisplay XE TV
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Upgrade your workspace with the eDisplay XE and take your productivity to new heights.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$199.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 6: Phone Case -->
+				<a href="/store/phone-case" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								ACCESSORY
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-pink-100 to-pink-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-pink-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									Phone Black Matte Case
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Protect your Phone in style with our sleek and durable iPhone case, combining protection and aesthetics.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$29.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 7: eWatch SF 4 -->
+				<a href="/store/ewatch-sf4" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								ACCESSORY
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-teal-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									eWatch SF 4
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Stay connected, organized, and motivated with eWatch. Enjoy seamless connectivity and smart features.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$49.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+
+				<!-- Product Card 8: Logitech Mouse -->
+				<a href="/store/logitech-mouse" class="product-card group">
+					<div class="w-[360px] h-[450px] bg-[#f8f8f8] rounded-[16px] shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+						<!-- Category Label -->
+						<div class="absolute top-[20px] left-[20px] z-10">
+							<span class="text-[12px] uppercase tracking-wide text-gray-500 font-medium">
+								TECHNOLOGY
+							</span>
+						</div>
+						
+						<!-- Image Area (65% of card) -->
+						<div class="h-[292px] bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center relative">
+							<div class="w-24 h-24 bg-orange-600 rounded-full flex items-center justify-center">
+								<svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+						</div>
+						
+						<!-- Text Area (35% of card) -->
+						<div class="h-[158px] p-[20px] flex flex-col justify-between">
+							<div>
+								<h3 class="text-[20px] font-bold text-black mb-2 leading-tight">
+									Logitech MX Master 3
+								</h3>
+								<p class="text-[14px] text-[#666666] leading-relaxed mb-3">
+									Premium wireless mouse with advanced ergonomics and precision tracking for professionals.
+								</p>
+								<div class="text-[18px] font-bold text-black">
+									$149.99 USD
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Load More Section -->
+			<div class="text-center mt-[60px] mb-[80px]">
+				<button class="load-more-btn bg-black text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1">
+					Load More
+				</button>
+			</div>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	/* Product card animations */
+	.product-card {
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	
+	.product-card:hover {
+		transform: translateY(-4px);
+	}
+	
+	/* Filter button styles */
+	.filter-btn {
+		background-color: #f0f0f0;
+		color: #000000;
+		border: 1px solid transparent;
+	}
+	
+	.filter-btn:hover {
+		background-color: #e0e0e0;
+		transform: translateY(-1px);
+	}
+	
+	.filter-btn-active {
+		background-color: #000000;
+		color: #ffffff;
+	}
+	
+	.filter-btn-active:hover {
+		background-color: #1a1a1a;
+	}
+	
+	/* Load more button animations */
+	.load-more-btn {
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	}
+	
+	.load-more-btn:hover {
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	/* Responsive grid adjustments */
+	@media (max-width: 1199px) {
+		.product-card > div {
+			width: 100% !important;
+			max-width: 360px;
+		}
+	}
+	
+	@media (max-width: 767px) {
+		.product-card > div {
+			width: 100% !important;
+			max-width: none;
+		}
+	}
+</style>
+
+<script>
+	// Filter functionality
+	document.addEventListener('DOMContentLoaded', function() {
+		const filterBtns = document.querySelectorAll('.filter-btn') as NodeListOf<HTMLElement>;
+		const productCards = document.querySelectorAll('.product-card') as NodeListOf<HTMLElement>;
+		
+		filterBtns.forEach(btn => {
+			btn.addEventListener('click', function(this: HTMLElement) {
+				// Remove active class from all buttons
+				filterBtns.forEach(b => {
+					b.classList.remove('filter-btn-active');
+					b.style.backgroundColor = '#f0f0f0';
+					b.style.color = '#000000';
+				});
+				
+				// Add active class to clicked button
+				this.classList.add('filter-btn-active');
+				this.style.backgroundColor = '#000000';
+				this.style.color = '#ffffff';
+				
+				// Get filter value
+				const filterValue = this.textContent?.trim().toLowerCase() || '';
+				
+				// Filter products (for demo, show all products)
+				productCards.forEach(card => {
+					card.style.display = 'block';
+				});
+			});
+		});
+	});
+</script>
