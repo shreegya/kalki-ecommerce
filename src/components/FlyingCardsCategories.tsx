@@ -7,7 +7,6 @@ interface CategoryCard {
   image: string;
   productCount: string;
   color: string;
-  icon: string;
   position: {
     x: number;
     y: number;
@@ -23,8 +22,7 @@ const categories: CategoryCard[] = [
     tagline: 'Latest Tech & Innovation',
     image: '/hero-image.jpg',
     productCount: '2,500+ Products',
-    color: 'from-blue-500/20 to-purple-600/20',
-    icon: '📱',
+    color: 'from-gray-500/30 to-black/20',
     position: { x: -162, y: -200, rotate: 0 },
     size: 'small'
   },
@@ -34,8 +32,7 @@ const categories: CategoryCard[] = [
     tagline: 'Style That Speaks',
     image: '/hero-image1.jpg',
     productCount: '1,800+ Products',
-    color: 'from-pink-500/20 to-rose-600/20',
-    icon: '👗',
+    color: 'from-gray-500/30 to-black/20',
     position: { x: 162, y: -200, rotate: 0 },
     size: 'small'
   },
@@ -45,8 +42,7 @@ const categories: CategoryCard[] = [
     tagline: 'Your Perfect Space',
     image: '/hero-image11.jpg',
     productCount: '3,200+ Products',
-    color: 'from-green-500/20 to-emerald-600/20',
-    icon: '🏠',
+    color: 'from-gray-500/30 to-black/20',
     position: { x: -162, y: 80, rotate: 0 },
     size: 'small'
   },
@@ -56,8 +52,7 @@ const categories: CategoryCard[] = [
     tagline: 'Active Lifestyle',
     image: '/hero-image.jpg',
     productCount: '1,500+ Products',
-    color: 'from-orange-500/20 to-red-600/20',
-    icon: '⚽',
+    color: 'from-gray-500/30 to-black/20',
     position: { x: 162, y: 80, rotate: 0 },
     size: 'small'
   },
@@ -65,10 +60,9 @@ const categories: CategoryCard[] = [
     id: 'beauty-wellness',
     title: 'Beauty & Wellness',
     tagline: 'Look & Feel Amazing',
-    image: '/hero-image1.jpg',
+    image: '/hero-image.jpg',
     productCount: '2,100+ Products',
-    color: 'from-purple-500/20 to-pink-600/20',
-    icon: '💄',
+    color: 'from-gray-500/30 to-black/20',
     position: { x: -500, y: -50, rotate: 0 },
     size: 'large'
   },
@@ -76,10 +70,9 @@ const categories: CategoryCard[] = [
     id: 'books-media',
     title: 'Books & Media',
     tagline: 'Discover Stories',
-    image: '/hero-image11.jpg',
+    image: '/hero-image.jpg',
     productCount: '4,000+ Products',
-    color: 'from-indigo-500/20 to-blue-600/20',
-    icon: '📚',
+    color: 'from-gray-500/30 to-black/20',
     position: { x: 500, y: -50, rotate: 0 },
     size: 'large'
   }
@@ -196,10 +189,8 @@ const FlyingCardsCategories: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
-            Explore Our
-            <span className="block bg-gradient-to-r from-white to-gray-900 bg-clip-text text-transparent">
-              Categories
-            </span>
+            Explore Our Categories
+            
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
             Discover amazing products across our carefully curated categories
@@ -257,12 +248,6 @@ const FlyingCardsCategories: React.FC = () => {
 
                 {/* Content */}
                 <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                  {/* Category Icon */}
-                  <div className={`${category.size === 'large' ? 'text-6xl' : 'text-4xl'} mb-3 transition-transform duration-300 ${
-                    prefersReducedMotion ? '' : 'transform group-hover:scale-110'
-                  }`}>
-                    {category.icon}
-                  </div>
 
                   {/* Category Title */}
                   <h3 className={`${category.size === 'large' ? 'text-3xl' : 'text-2xl'} font-bold text-white mb-2 leading-tight`} style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
@@ -302,8 +287,8 @@ const FlyingCardsCategories: React.FC = () => {
         </div>
 
         {/* View All Categories CTA */}
-        <div className="text-center mt-0">
-          <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-lg font-semibold rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
+        <div className="text-center -mt-15">
+          <button className="inline-flex items-center px-8 py-4 bg-yellow-500 text-black text-lg font-semibold rounded-xl hover:bg-yellow-400 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
             View All Categories
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
