@@ -9,6 +9,21 @@
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
+  
+  /* Remove focus outline from all buttons and interactive elements */
+  button:focus,
+  button:focus-visible,
+  a:focus,
+  a:focus-visible,
+  input:focus,
+  input:focus-visible,
+  textarea:focus,
+  textarea:focus-visible,
+  select:focus,
+  select:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 }
 
 @layer components {
@@ -18,5 +33,72 @@
   
   .btn-secondary {
     @apply border border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-colors;
+  }
+
+  /* Thin top promotional banner (ticker) */
+  .promo-ticker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 36px; /* ~30-40px */
+    background: #000000; /* dark */
+    color: #ffffff;
+    z-index: 60; /* above header default */
+    border-bottom: 1px solid #facc15; /* yellow-400 */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+  }
+
+  .promo-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+    animation: promo-scroll 40s linear infinite;
+    width: 200%; /* Optimized width for seamless loop */
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+
+  .promo-ticker:hover .promo-track {
+    animation-play-state: paused; /* pause on hover */
+  }
+
+  .promo-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 24px;
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 600; /* medium-bold */
+    letter-spacing: 0.04em;
+    text-transform: uppercase; /* strong visibility */
+  }
+
+  .promo-sep {
+    color: #facc15; /* yellow-400 */
+    font-weight: 700;
+  }
+
+  .promo-icon {
+    color: #facc15; /* yellow accent */
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+  }
+
+  @keyframes promo-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .promo-ticker { height: 32px; }
+    .promo-item { font-size: 12px; padding: 0 16px; }
   }
 }

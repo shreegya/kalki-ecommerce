@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
+import Brands from '../components/Brands.astro';
 ---
 
 <Layout title="Tech Wave - Leading Technology Solutions">
@@ -188,181 +189,11 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 	<!-- Flying Cards Categories Section -->
 	<FlyingCardsCategories client:load />
 
-	<!-- Our Brands Section -->
-	<section class="py-16 bg-white relative overflow-hidden">
-		<div class="max-w-7xl mx-auto px-6">
-			<!-- Header -->
-			<div class="text-center mb-12">
-				<h2 class="text-2xl font-bold text-gray-900 uppercase tracking-wider mb-8" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-					Trusted by Beauty Brands
-				</h2>
-			</div>
+	<!-- Brands Section -->
+	<Brands client:load />
 
-			<!-- Brands Sliding Container -->
-			<div class="relative overflow-hidden">
-				
-				<div class="flex brands-slider py-6">
-					<!-- Brand 1 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<img src="/logos/anua-logo.png" alt="Anua" class="brand-logo-text" />
-						</div>
-					</div>
-
-					<!-- Brand 2 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">COSRX</div>
-						</div>
-					</div>
-
-					<!-- Brand 3 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Laneige</div>
-						</div>
-					</div>
-
-					<!-- Brand 4 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Innisfree</div>
-						</div>
-					</div>
-
-					<!-- Brand 5 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">The Ordinary</div>
-						</div>
-					</div>
-
-					<!-- Brand 6 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Some By Mi</div>
-						</div>
-					</div>
-
-					<!-- Brand 7 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Nivea</div>
-						</div>
-					</div>
-
-					<!-- Brand 8 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Olay</div>
-						</div>
-					</div>
-
-					<!-- Brand 9 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Cetaphil</div>
-						</div>
-					</div>
-
-					<!-- Brand 10 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Hada Labo</div>
-						</div>
-					</div>
-
-					<!-- Brand 11 -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Rose Water</div>
-						</div>
-					</div>
-
-					<!-- Duplicate brands for seamless loop -->
-					<!-- Brand 1 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<img src="/logos/anua-logo.png" alt="Anua" class="brand-logo-text" />
-						</div>
-					</div>
-
-					<!-- Brand 2 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">COSRX</div>
-						</div>
-					</div>
-
-					<!-- Brand 3 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Laneige</div>
-						</div>
-					</div>
-
-					<!-- Brand 4 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Innisfree</div>
-						</div>
-					</div>
-
-					<!-- Brand 5 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">The Ordinary</div>
-						</div>
-					</div>
-
-					<!-- Brand 6 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Some By Mi</div>
-						</div>
-					</div>
-
-					<!-- Brand 7 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Nivea</div>
-						</div>
-					</div>
-
-					<!-- Brand 8 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Olay</div>
-						</div>
-					</div>
-
-					<!-- Brand 9 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Cetaphil</div>
-						</div>
-					</div>
-
-					<!-- Brand 10 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Hada Labo</div>
-						</div>
-					</div>
-
-					<!-- Brand 11 Duplicate -->
-					<div class="brand-slide flex-shrink-0 mx-8">
-						<div class="brand-logo-container">
-							<div class="brand-logo-text">Rose Water</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-		<!-- Flash Sale Section -->
-		<section class="py-16 bg-white">
+	<!-- Flash Sale Section -->
+		<section class="py-8 bg-white">
 			<div class="max-w-7xl mx-auto px-6">
 				<!-- Header -->
 				<div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
@@ -1004,85 +835,190 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 
 
 	<style>
+		/* Premium single-river showcase */
+		.river-viewport {
+			position: relative;
+			overflow: hidden;
+			mask-image: radial-gradient(120% 60% at 50% 50%, #000 60%, transparent 100%);
+		}
+
+		.river-track {
+			display: flex;
+			align-items: center;
+			gap: clamp(40px, 6vw, 120px);
+			padding-block: 8px;
+			will-change: transform;
+			animation: river-move 36s linear infinite;
+		}
+
+		/* Parallax layers (A fastest, C slowest) */
+		.river-a { animation-duration: 30s; transform: translateX(0); }
+		.river-b { animation-duration: 40s; transform: translateX(18%); }
+		.river-c { animation-duration: 52s; transform: translateX(36%); opacity: .75; }
+
+		/* Weightless float micro-interaction */
+		.river-item {
+			font-weight: 600;
+			letter-spacing: .02em;
+			white-space: nowrap;
+			line-height: 1;
+			transform: translateZ(0);
+			animation: float 6s ease-in-out infinite;
+			font-size: clamp(18px, 3vw, 32px);
+		}
+		.river-logo { height: 40px; width: auto; display: block; filter: none; }
+		.river-item:nth-child(3n) { animation-duration: 7s; }
+		.river-item:nth-child(4n) { animation-duration: 8s; }
+
+		/* Hover polish */
+		.river-viewport:hover .river-track { animation-play-state: paused; }
+		.river-viewport:hover .river-item { animation-play-state: paused; }
+		.river-item:hover { transform: translateY(-2px) scale(1.03); transition: transform 220ms ease; }
+
+		@keyframes river-move {
+			0% { transform: translateX(0); }
+			100% { transform: translateX(-50%); }
+		}
+		@keyframes float {
+			0%,100% { transform: translateY(0); }
+			50% { transform: translateY(-3px); }
+		}
+
+		/* Accessibility: reduced motion */
+		@media (prefers-reduced-motion: reduce) {
+			.river-track, .river-item { animation: none; }
+		}
+
+		/* Minimal two-row logo showcase */
+		.duo-viewport { position: relative; overflow: hidden; display: grid; place-items: center; gap: 0; width: 100%; }
+		.duo-track {
+			display: flex;
+			align-items: center;
+			gap: clamp(40px, 6vw, 120px);
+			animation: duo-left 26s linear infinite, duo-fade 6s ease-in-out infinite;
+			will-change: transform;
+			padding: 12px 0;
+			min-width: 300%; /* ensures track overflows viewport for a filled, continuous loop */
+		}
+		.duo-track--x3 { min-width: 300%; }
+		.duo-track--center { justify-content: center; }
+		.duo-item { line-height: 1; }
+		.duo-logo { height: 26px; width: auto; display: block; }
+		@keyframes duo-left { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+		@keyframes duo-fade { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+		@media (prefers-reduced-motion: reduce) { .duo-track { animation: none; } }
+		/* Two-row brands marquee */
+		.brand-mask {
+			position: absolute; inset: 0;
+			pointer-events: none;
+			background: linear-gradient(90deg,
+				rgba(255,255,255,1) 0%, rgba(255,255,255,0) 6%,
+				rgba(255,255,255,0) 94%, rgba(255,255,255,1) 100%);
+			mask-image: linear-gradient(90deg, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+		}
+
+		.marquee {
+			overflow: hidden;
+		}
+
+		:root { --brand-gap: 40px; --brand-dur: 30s; }
+
+		.marquee-track {
+			display: flex;
+			align-items: center;
+			gap: var(--brand-gap);
+			animation: marquee-left var(--brand-dur) linear infinite;
+			will-change: transform;
+		}
+
+		/* Row-specific offsets and speeds to keep a staggered, brick-like pattern */
+		.marquee-track--row1 { transform: translateX(0); }
+		.marquee-track--row2 { transform: translateX(calc(var(--brand-gap) / 2)); animation-duration: 32s; }
+
+		.brand-item {
+			color: #9CA3AF;
+			opacity: 0.7;
+			font-weight: 600;
+			letter-spacing: 0.02em;
+			white-space: nowrap;
+			line-height: 1;
+			transform: translateZ(0);
+			transition: transform 200ms ease, opacity 200ms ease, color 200ms ease, filter 200ms ease;
+			font-size: 28px; /* scalable wordmark size */
+		}
+
+		/* approximate 40px height look with text sizing; images would be max-height: 40px */
+		.brand-item img { height: 40px; width: auto; filter: grayscale(100%); opacity: 0.7; }
+		.brand-item:hover img { filter: none; opacity: 1; }
+
+		.marquee:hover .brand-item { animation-play-state: paused; }
+
+		.marquee:hover .brand-item:hover {
+			opacity: 1;
+			transform: scale(1.04);
+			filter: none;
+			color: #111827; /* dark text when hovered */
+		}
+
+		@keyframes marquee-left {
+			0% { transform: translateX(0); }
+			100% { transform: translateX(-50%); }
+		}
+
+		@media (max-width: 768px) {
+			:root { --brand-gap: 28px; --brand-dur: 24s; }
+			.brand-item { font-size: 22px; }
+		}
+
+		@media (max-width: 480px) {
+			:root { --brand-gap: 22px; --brand-dur: 20s; }
+			.brand-item { font-size: 18px; }
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.marquee-track { animation: none; }
+		}
 		/* Brands Sliding Animation */
 		.brands-slider {
-			animation: slideBrands 30s linear infinite;
-			width: calc(100% + 200px);
+			animation: slideBrands 28s linear infinite;
+			width: calc(100% + 160px);
 		}
 
 		.brand-slide {
-			transition: all 0.3s ease;
+			transition: transform 0.25s ease, opacity 0.25s ease, filter 0.25s ease;
 		}
 
 		.brand-logo-container {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			height: 60px;
-			padding: 0 20px;
-			position: relative;
+			height: 56px;
+			padding: 0 16px;
 		}
 
+		/* Shared logo styling for text and images */
 		.brand-logo-text {
-			max-height: 40px;
+			max-height: 36px;
 			max-width: 120px;
 			object-fit: contain;
-			transition: all 0.3s ease;
-			position: relative;
-			z-index: 2;
-			filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.1));
+			display: block;
+			color: #4b5563; /* gray-600 for text logos */
+			font-weight: 600;
+			letter-spacing: 0.02em;
+			filter: grayscale(100%) contrast(95%) opacity(0.7);
 		}
 
-		/* Realistic drop shadow using multiple pseudo-elements for logos */
-		.brand-logo-container::before {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 120px;
-			height: 40px;
-			background: rgba(0, 0, 0, 0.15);
-			border-radius: 4px;
-			z-index: 1;
-			opacity: 0.6;
-			transition: all 0.3s ease;
-			filter: blur(2px);
+		/* Image logos should scale responsively inside container */
+		.brand-logo-container img.brand-logo-text {
+			width: auto;
+			height: 100%;
+			max-height: 36px;
 		}
 
-		.brand-logo-container::after {
-			content: '';
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 120px;
-			height: 40px;
-			background: rgba(0, 0, 0, 0.08);
-			border-radius: 6px;
-			z-index: 0;
-			opacity: 0.4;
-			transition: all 0.3s ease;
-			filter: blur(4px);
-		}
-
+		/* Subtle, tasteful hover */
 		.brand-slide:hover .brand-logo-text {
-			transform: translateY(-2px);
-			filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
-		}
-
-		.brand-slide:hover .brand-logo-container::before {
-			opacity: 0.8;
-			transform: translate(-50%, -50%) translateY(2px);
-			filter: blur(3px);
-			background: rgba(0, 0, 0, 0.2);
-		}
-
-		.brand-slide:hover .brand-logo-container::after {
-			opacity: 0.6;
-			transform: translate(-50%, -50%) translateY(4px);
-			filter: blur(6px);
-			background: rgba(0, 0, 0, 0.12);
+			filter: grayscale(0%) contrast(100%) opacity(1);
+			transform: translateY(-1px);
 		}
 
 		@keyframes slideBrands {
@@ -1094,37 +1030,23 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 			}
 		}
 
-		/* Pause animation on hover */
-		.brands-slider:hover {
-			animation-play-state: paused;
-		}
+		/* Pause animation on hover for usability */
+		.brands-slider:hover { animation-play-state: paused; }
 
 		/* Responsive adjustments */
 		@media (max-width: 768px) {
-			.brands-slider {
-				animation-duration: 15s;
-			}
-			
-			.brand-slide {
-				width: 200px;
-			}
+			.brands-slider { animation-duration: 14s; }
+			.brand-slide { width: 160px; }
 		}
 
 		@media (max-width: 480px) {
-			.brands-slider {
-				animation-duration: 12s;
-			}
-			
-			.brand-slide {
-				width: 180px;
-			}
+			.brands-slider { animation-duration: 12s; }
+			.brand-slide { width: 140px; }
 		}
 
 		/* Reduced motion support */
 		@media (prefers-reduced-motion: reduce) {
-			.brands-slider {
-				animation: none;
-			}
+			.brands-slider { animation: none; }
 		}
 
 		/* Book Page Turning Animation */
@@ -1372,7 +1294,7 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 	</style>
 
 		<!-- Best Deals Section -->
-		<section class="py-16 bg-white">
+		<section class="py-8 bg-white">
 			<div class="max-w-7xl mx-auto px-6">
 				<!-- Header -->
 				<div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
@@ -1803,12 +1725,12 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 	</section>
 
 		<!-- New Arrivals Section -->
-	<section class="py-16 bg-white">
+	<section class="py-8 bg-white">
 		<div class="max-w-7xl mx-auto px-6">
 			<!-- Header -->
 			<div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
 				<h2 class="text-4xl font-bold text-black">New Arrivals</h2>
-				<a href="/store" class="text-gray-600 hover:text-black font-medium transition-colors flex items-center">
+				<a href="/store" class="text-white-600 hover:text-black font-medium transition-colors flex items-center">
 					Shop More
 						<svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -2228,7 +2150,7 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 	</section>
 
 		<!-- Most Popular Section -->
-		<section class="py-16 bg-white">
+		<section class="py-8 bg-white">
 			<div class="max-w-7xl mx-auto px-6">
 				<!-- Header -->
 				<div class="flex items-center justify-between mb-8 pb-4 border-b border-gray-200">
@@ -2661,7 +2583,7 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 
 
 	<!-- Read Our Story Section -->
-	<section class="py-24 bg-gray-50 animate-section-fade-in" style="animation-delay: 1.2s;">
+	<section class="py-12 bg-gray-50 animate-section-fade-in" style="animation-delay: 1.2s;">
 		<div class="max-w-6xl mx-auto px-6">
 			<div class="grid lg:grid-cols-2 gap-16 items-center">
 				<div>
@@ -2870,12 +2792,22 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 
 	// Hero Carousel functionality
 	class HeroCarousel {
+		slides: NodeListOf<HTMLElement>;
+		dots: NodeListOf<HTMLElement>;
+		prevBtn: HTMLElement | null;
+		nextBtn: HTMLElement | null;
+		progressBar: HTMLElement | null;
+		currentSlide: number;
+		totalSlides: number;
+		autoPlayInterval: number | NodeJS.Timeout | null;
+		isTransitioning: boolean;
+
 		constructor() {
-			this.slides = document.querySelectorAll('.carousel-slide');
-			this.dots = document.querySelectorAll('.carousel-dot');
-			this.prevBtn = document.querySelector('.carousel-prev');
-			this.nextBtn = document.querySelector('.carousel-next');
-			this.progressBar = document.querySelector('.carousel-progress');
+			this.slides = document.querySelectorAll('.carousel-slide') as NodeListOf<HTMLElement>;
+			this.dots = document.querySelectorAll('.carousel-dot') as NodeListOf<HTMLElement>;
+			this.prevBtn = document.querySelector('.carousel-prev') as HTMLElement | null;
+			this.nextBtn = document.querySelector('.carousel-next') as HTMLElement | null;
+			this.progressBar = document.querySelector('.carousel-progress') as HTMLElement | null;
 			this.currentSlide = 0;
 			this.totalSlides = this.slides.length;
 			this.autoPlayInterval = null;
@@ -2942,7 +2874,7 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 			});
 		}
 
-		handleSwipe(startX, endX) {
+		handleSwipe(startX: number, endX: number) {
 			const threshold = 50;
 			const diff = startX - endX;
 
@@ -2955,7 +2887,7 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 			}
 		}
 
-		showSlide(index) {
+		showSlide(index: number) {
 			if (this.isTransitioning) return;
 
 			this.isTransitioning = true;
@@ -2985,12 +2917,12 @@ import FlyingCardsCategories from '../components/FlyingCardsCategories.tsx';
 			this.showSlide(prev);
 		}
 
-		goToSlide(index) {
+		goToSlide(index: number) {
 			this.showSlide(index);
 		}
 
 		updateDots() {
-			this.dots.forEach((dot, index) => {
+			this.dots.forEach((dot, index: number) => {
 				if (index === this.currentSlide) {
 					dot.classList.add('bg-white');
 					dot.classList.remove('bg-white/50');

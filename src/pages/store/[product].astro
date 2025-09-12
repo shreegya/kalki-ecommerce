@@ -102,10 +102,10 @@ if (!productData) {
 
           <!-- Add to Cart Section -->
           <div class="space-y-4 animate-fade-in-up" style="animation-delay: 0.5s;">
-            <button data-add-to-cart class="w-full bg-gray-300 text-white py-4 px-8 rounded-full hover:bg-gray-700 transition-all duration-300 ease-out font-semibold text-lg shadow-lg hover:shadow-gray-500/25 transform hover:scale-[1.02] hover:-translate-y-1">
+            <button data-add-to-cart class="w-full bg-gray-300 text-white py-4 px-8 rounded-full hover:bg-yellow-500 transition-all duration-300 ease-out font-semibold text-lg shadow-lg hover:shadow-gray-500/25 transform hover:scale-[1.02] hover:-translate-y-1">
               Add to Cart
             </button>
-            <button class="w-full bg-black text-white py-4 px-8 rounded-full hover:bg-gray-800 transition-all duration-300 ease-out font-semibold text-lg shadow-lg hover:shadow-gray-500/25 transform hover:scale-[1.02] hover:-translate-y-1">
+            <button class="w-full bg-black text-white py-4 px-8 rounded-full hover:bg-black-500 transition-all duration-300 ease-out font-semibold text-lg shadow-lg hover:shadow-gray-500/25 transform hover:scale-[1.02] hover:-translate-y-1">
               Buy Now
             </button>
             <button class="w-full border-2 border-gray-600 text-gray-600 py-4 px-8 rounded-full hover:border-black hover:text-black transition-all duration-300 ease-out font-semibold transform hover:scale-[1.02] hover:-translate-y-1">
@@ -220,7 +220,7 @@ if (!productData) {
         <h2 class="text-2xl font-bold text-black mb-8 hover:text-gray-800 transition-all duration-300 ease-out">Related Products</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {Object.values(products).filter(p => p.id !== productData.id).slice(0, 4).map(relatedProduct => (
-            <a href={`/store/${relatedProduct.id}`} class="product-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden border border-gray-200">
+            <a href={`/store/${relatedProduct.id}`} target="_blank" class="product-card group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden border border-gray-200">
               <div class="relative overflow-hidden">
                 <div class="aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                   <div class="w-20 h-20 bg-gray-300 rounded-full flex items-center justify-center">
